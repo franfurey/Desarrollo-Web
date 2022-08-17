@@ -55,3 +55,7 @@ footer {
 .borde {
     border-radius: 10px 100px / 120px;
 }
+
+header nav ul li {
+    display: inline-block;
+}
