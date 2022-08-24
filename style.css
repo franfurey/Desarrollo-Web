@@ -140,3 +140,41 @@ div {
   justify-content: space-around;
   align-items: flex-start;
 }
+
+.container_padre {
+  display: grid;
+  grid-template-columns: 0.4fr 4fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 1fr 1fr;
+  grid-template-areas:
+    "nav head head"
+    "nav tion ads"
+    "nav main ads"
+    "nav pie pie";
+}
+
+header {
+  background-color: burlywood;
+  grid_area: head;
+}
+
+nav {
+  background-color: brown;
+  grid-area: nav;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  background-color: aqua;
+  grid-area: tion;
+}
+
+main {
+  background-color: turquoise;
+  grid-area: main;
+}
+
+aside {
+  background-color: blueviolet;
+  grid-area: pie;
+}

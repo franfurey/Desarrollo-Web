@@ -9,7 +9,7 @@ header div {
 
 header {
   display: flex;
-  flex-flow: wrap row;
+  flex-flow: row;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -32,25 +32,45 @@ nav ul a {
   align-content: center;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-content: flex-end;
+  align-items: flex-end;
+}
+
 /* INDEX */
+
+.mainsectionarticle {
+  background-color: blueviolet;
+  padding: 2%;
+  color: aliceblue;
+}
+
+.upaIndex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: left;
+  align-items: left;
+}
 
 .indexCenter {
   display: flex;
-  flex-wrap: wrap row;
+  flex-wrap: row;
   justify-content: center;
   align-content: center;
   margin: 1%;
 }
 
 .mainBlack__ {
-  background-color: black;
+  background-color: rgb(53, 17, 87);
   color: aliceblue;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin: 1%;
   padding: 1%;
 }
 
@@ -78,9 +98,19 @@ header nav ul li {
 
 /* PLATAFORMA */
 
+.plataformaCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  /* margin: 1%; */
+  align-items: center;
+  padding: 1%;
+}
+
 .articleA {
   display: flex;
-  flex-wrap: wrap column;
+  flex-wrap: column;
   justify-content: space-around;
   flex-direction: row-reverse;
   align-content: center;
@@ -92,8 +122,9 @@ header nav ul li {
 
 .articleB {
   display: flex;
-  flex-wrap: wrap column;
+  flex-wrap: column;
   align-content: center;
+  justify-content: space-around;
   align-items: center;
   margin: 2%;
   padding: 0.3%;
@@ -114,6 +145,18 @@ header nav ul li {
   align-items: flex-start;
 }
 
+/* PORQUE UPA? */
+
+.articleC {
+  display: flex;
+  flex-wrap: column;
+  align-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin: 2%;
+  padding: 0.3%;
+}
+
 /* PRECIOS */
 
 .mainPrecios {
@@ -121,4 +164,43 @@ header nav ul li {
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: flex-start;
+}
+
+.plataform {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "b a"
+    "c d"
+    "e f"
+    "g h";
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  background-color: aqua;
+  grid-area: a;
+}
+
+b {
+  display: flex;
+  justify-content: center;
+  background-color: aqua;
+  grid-area: b;
+}
+
+c {
+  display: flex;
+  justify-content: center;
+  background-color: aqua;
+  grid-area: c;
+}
+
+d {
+  display: flex;
+  justify-content: center;
+  background-color: aqua;
+  grid-area: d;
 }
