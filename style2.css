@@ -1,5 +1,49 @@
 /* GENERAL */
 
+body {
+  color: rgb(9, 6, 49);
+  background-color: aliceblue;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 300%;
+}
+
+p,
+li {
+  font-size: 120%;
+  text-align: center;
+}
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 50%;
+  padding: 2%;
+  max-width: 70%;
+}
+
+a {
+  color: aliceblue;
+}
+
+h3 a {
+  color: rgb(9, 6, 49);
+}
+
+a:hover {
+  color: rgb(91, 72, 91);
+}
+
 header div {
   display: flex;
   justify-content: left;
@@ -14,37 +58,38 @@ header {
   align-items: center;
   align-content: center;
   /* position: sticky; */
-  top: 0;
-  margin: 2%;
-  padding: 0.3%;
+  /* top: 0; */
+  background-color: rgb(234, 240, 246);
 }
 
 nav ul a {
-  color: aliceblue;
-  background-color: blueviolet;
-  border: 1px solid blue;
+  color: rgb(9, 6, 49);
   padding: 10px;
   font-size: 20 px;
   margin: 20 px;
-  /* display: flex; */
+  display: flex;
   flex-flow: wrap column;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center;
 }
 
-.footer {
-  display: flex;
-  justify-content: space-around;
-  align-content: flex-end;
-  align-items: flex-end;
+div h2 a {
+  color: aliceblue;
+  background-color: rgb(9, 6, 49);
+  padding: 10px;
+  font-size: 20 px;
+}
+
+img {
+  border-radius: 10px 100px / 120px;
 }
 
 /* INDEX */
 
-.mainsectionarticle {
-  background-color: blueviolet;
+.mainSectionArticle {
   padding: 2%;
-  color: aliceblue;
+  background-color: rgb(234, 240, 246);
+  border-radius: 10px 100px / 120px;
 }
 
 .upaIndex {
@@ -64,8 +109,8 @@ nav ul a {
 }
 
 .mainBlack__ {
-  background-color: rgb(53, 17, 87);
   color: aliceblue;
+  background-image: url(https://images5.alphacoders.com/542/542019.jpg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,7 +123,7 @@ nav ul a {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-
+  border-radius: 10px 100px / 120px;
   align-content: center;
 }
 
@@ -103,7 +148,6 @@ header nav ul li {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  /* margin: 1%; */
   align-items: center;
   padding: 1%;
 }
@@ -115,9 +159,8 @@ header nav ul li {
   flex-direction: row-reverse;
   align-content: center;
   align-items: center;
-  margin: 2%;
   padding: 0.3%;
-  background-color: blueviolet;
+  width: 100%;
 }
 
 .articleB {
@@ -126,8 +169,11 @@ header nav ul li {
   align-content: center;
   justify-content: space-around;
   align-items: center;
-  margin: 2%;
+  /* margin: 2%; */
   padding: 0.3%;
+  width: 100%;
+  color: aliceblue;
+  background-image: url(https://images5.alphacoders.com/542/542019.jpg);
 }
 
 .mainPlataforma {
@@ -166,41 +212,21 @@ header nav ul li {
   align-items: flex-start;
 }
 
-.plataform {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "b a"
-    "c d"
-    "e f"
-    "g h";
+/* FOOTER */
+
+footer {
+  display: flex column;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  background-color: rgb(9, 6, 49);
+  color: aliceblue;
 }
 
-a {
-  display: flex;
-  justify-content: center;
-  background-color: aqua;
-  grid-area: a;
-}
-
-b {
-  display: flex;
-  justify-content: center;
-  background-color: aqua;
-  grid-area: b;
-}
-
-c {
-  display: flex;
-  justify-content: center;
-  background-color: aqua;
-  grid-area: c;
-}
-
-d {
-  display: flex;
-  justify-content: center;
-  background-color: aqua;
-  grid-area: d;
+.footerWsp {
+  background-color: #25d366;
+  color: #fff;
+  padding: 10px;
+  font-size: 20 px;
+  margin: 20 px;
 }
