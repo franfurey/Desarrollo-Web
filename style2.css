@@ -2,7 +2,7 @@
 
 body {
   color: rgb(9, 6, 49);
-  background-color: aliceblue;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
 }
 
 h1,
@@ -59,9 +59,6 @@ header {
   justify-content: center;
   align-items: center;
   align-content: center;
-  /* position: sticky; */
-  /* top: 0; */
-  background-color: rgb(234, 240, 246);
 }
 
 nav ul a {
@@ -75,15 +72,25 @@ nav ul a {
   align-content: center;
 }
 
-div h2 a {
+main div div div h2 a {
   color: aliceblue;
-  background-color: rgb(9, 6, 49);
+  background-image: linear-gradient(135deg, #f97794 10%, #623aa2 100%);
   padding: 10px;
   font-size: 20 px;
+  border-radius: 30px;
+  transition: all 2s;
+}
+
+div h2 a:hover {
+  transform: scale(2);
 }
 
 img {
   border-radius: 10px 100px / 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .img2 {
@@ -98,7 +105,7 @@ img {
 
 .mainSectionArticle {
   padding: 1%;
-  background-color: rgb(234, 240, 246);
+  background-color: aliceblue;
   border-radius: 10px 100px / 120px;
 }
 
@@ -119,7 +126,7 @@ img {
 }
 
 .mainBlack__ {
-  color: rgb(234, 240, 246);
+  color: aliceblue;
   background-image: url(https://images5.alphacoders.com/542/542019.jpg);
   display: flex;
   flex-direction: column;
@@ -130,11 +137,15 @@ img {
 }
 
 .sectionMain {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   justify-content: space-around;
   border-radius: 10px 100px / 120px;
   align-content: center;
+  gap: 2%;
+  justify-items: stretch;
+  padding: 1%;
 }
 
 /* BOTWSPP */
@@ -163,28 +174,35 @@ header nav ul li {
   justify-content: center;
   align-content: center;
   align-items: center;
-  padding: 1%;
+  padding: 3%;
 }
 
 .articleA {
-  display: flex;
-  flex-wrap: column;
-  justify-content: space-around;
+  /* display: flex;
+  flex-wrap: column wrap; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   flex-direction: row-reverse;
+  justify-content: space-around;
   align-content: center;
   align-items: center;
-  padding: 0.3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   width: 100%;
 }
 
 .articleB {
-  display: flex;
-  flex-wrap: column;
+  /* display: flex;
+  flex-wrap: column; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   align-content: center;
   justify-content: space-around;
   align-items: center;
-  /* margin: 2%; */
-  padding: 0.3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   width: 100%;
   color: aliceblue;
   background-image: url(https://images5.alphacoders.com/542/542019.jpg);
@@ -205,6 +223,13 @@ header nav ul li {
   align-items: flex-start;
 }
 
+.efecto {
+  transition: all 0.7s;
+}
+.efecto:hover {
+  transform: translate(20px, 20px);
+}
+
 /* PORQUE UPA? */
 
 .articleC {
@@ -215,7 +240,6 @@ header nav ul li {
   flex-direction: row-reverse;
   margin: 2%;
   padding: 0.3%;
-  background-color: rgb(234, 240, 246);
 }
 
 .porqueCenter {
@@ -228,9 +252,7 @@ header nav ul li {
   align-content: center;
   align-items: center;
   padding-bottom: 30%;
-  background-image: url(https://images5.alphacoders.com/542/542019.jpg);
   background-image: url(https://images3.alphacoders.com/585/thumb-1920-585616.png);
-  /* background-image: url(https://images2.alphacoders.com/605/thumb-1920-605933.jpg); */
 }
 
 /* PRECIOS */
@@ -242,6 +264,12 @@ header nav ul li {
   align-items: flex-start;
 }
 
+.gird {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 3fr 1fr;
+}
+
 /* FOOTER */
 
 footer {
@@ -249,18 +277,107 @@ footer {
   justify-content: space-around;
   align-content: center;
   align-items: center;
-  background-color: rgb(9, 6, 49);
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
   color: aliceblue;
+  padding: 1%;
 }
 
-.footerWsp {
+#footerWsp {
   background-color: #25d366;
   color: #fff;
   padding: 10px;
   font-size: 20 px;
   margin: 20 px;
+  border-radius: 30px;
 }
 
-/* GRID */
-@media screen and (width: 480px) {
+/* MEDIA QUERIES */
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .indexCenter {
+    flex-direction: column;
+  }
+
+  .upaIndex {
+    flex-direction: column;
+  }
+
+  .sectionMain {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .mainBlack__ {
+    width: 100%;
+  }
+
+  .plataformaCenter {
+    width: 100%;
+  }
+
+  .articleA {
+    flex-direction: column;
+    width: 100%;
+  }
+  .articleB {
+    flex-direction: column;
+    width: 500px;
+  }
+  .articleC {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .img2 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .indexCenter {
+    flex-direction: column;
+  }
+
+  .upaIndex {
+    flex-direction: column;
+  }
+
+  .sectionMain {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .mainBlack__ {
+    width: 100%;
+  }
+
+  .plataformaCenter {
+    width: 100%;
+  }
+
+  .articleA {
+    flex-direction: column;
+    width: 100%;
+  }
+  .articleB {
+    flex-direction: column;
+    width: 500px;
+  }
+  .articleC {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .img2 {
+    width: 100%;
+  }
 }
