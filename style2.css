@@ -367,10 +367,14 @@ footer {
   .articleA {
     flex-direction: column;
     width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
   .articleB {
     flex-direction: column;
-    width: 500px;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
   .articleC {
     flex-direction: column;
