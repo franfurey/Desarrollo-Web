@@ -16,6 +16,19 @@ h1 {
   font-size: 300%;
 }
 
+h2::first-letter {
+  font-size: 110%;
+}
+
+h3::first-letter {
+  font-size: 110%;
+}
+
+h2::selection {
+  color: aliceblue;
+  background-color: #623aa2;
+}
+
 p,
 li {
   font-size: 120%;
