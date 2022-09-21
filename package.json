@@ -15,5 +15,8 @@
     "url": "https://github.com/franfurey/Desarrollo-Web/issues"
   },
   "homepage": "https://github.com/franfurey/Desarrollo-Web#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "sass": "^1.54.9"
+  }
 }
