@@ -1,0 +1,19 @@
+header {
+  background-color: $bg-principal;
+  nav {
+    text-decoration: none;
+    ul {
+      list-style: none;
+      li {
+        text-decoration: dotted;
+        a {
+          color: aliceblue;
+          &:hover {
+            background-color: $bg-black;
+            font-size: $txt-principal;
+          }
+        }
+      }
+    }
+  }
+}
